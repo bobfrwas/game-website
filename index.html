@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,29 +18,43 @@
   </head>
   <body>
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
+	<div class="container-fluid" data-bs-theme="dark">
+		<div class="row" style="background-color: grey;">
+		  <div class="col-md-12">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<div class="d-flex">
-				  <a class="navbar-brand" href="#">Logo</a>
-				  <ul class="navbar-nav flex-row">
-					<li class="nav-item active">
-					  <a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Services</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Contact</a>
-					</li>
-				  </ul>
-				</div>
-			  </nav>
+			  <div class="d-flex justify-content-between align-items-center w-100">
+				<a class="navbar-brand" href="index.php">Logo</a>
+				<ul class="navbar-nav flex-row">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				  </li>
 				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				<ul class="navbar-nav flex-row">
+				  <li class="nav-item">
+					<a class="nav-link" href="create_an_account.html">Create an Account</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Sign In</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		  </div>
+		</div>
+	  </div>
 			<div class="carousel slide" id="carousel-410824">
 				<ol class="carousel-indicators">
 					<li data-slide-to="0" data-target="#carousel-410824" class="active">
@@ -88,7 +102,7 @@
 			</div>
 		</div>
 	</div>
-	<h2 style="text-align: center; color: red; background-color: black; animate__animated: animate__fadeIn">POPULAR GAMES!</h2>
+	<h2 style="text-align: center; color: red; background-color: black;">POPULAR GAMES!</h2>
 	<div class="row black_background">
 		<a href="eternal_nightmares.html">
 		<div class="col-md-4 outline-div" style="overflow: hidden;">

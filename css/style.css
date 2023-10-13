@@ -17,6 +17,10 @@
     border-radius: 50px;
 }
 
+li {
+  padding: 10px;
+}
+
 
 
 .game_box_img {
@@ -36,7 +40,7 @@ body{
 }
 
 nav {
-    background-color: darkred;
+    background-color: grey;
 }
 
 .navbar-toggler {
@@ -71,3 +75,16 @@ nav {
   .footer-info {
     font-size: 14px;
   }
+
+.button_rounded {
+  border-radius: 20px;
+}
+
+.btn_animated {
+  transition: transform 0.3s ease;
+}
+
+.btn_animated:hover {
+  transform: scale(1.15);
+  background: darkblue;
+}
