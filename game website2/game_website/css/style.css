@@ -1,0 +1,86 @@
+.carousel {
+    padding-bottom: 2rem;
+}
+
+.black_on_hover {
+    color: white;
+    text-decoration: none;
+}
+
+.black_on_hover:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.outline-div {
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+li {
+  padding: 10px;
+}
+
+
+
+.game_box_img {
+    width:100%; 
+    height:400px;
+}
+
+.custom-navbar {
+    background-color: black;
+  }
+
+
+
+
+body{
+    background-color: black;
+}
+
+nav {
+    background-color: grey;
+    color: white;
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-info {
+    font-size: 14px;
+  }
+
+
+
+
+
+  
+
+  
