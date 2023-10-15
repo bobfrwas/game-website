@@ -36,7 +36,7 @@ session_start(); // Start the session
         echo $_SESSION["username"];
         echo '</a>';
         echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
-        echo '<li><a class="dropdown-item" href="#">Profile</a></li>';
+        echo '<li><a class="dropdown-item" href="my_account.php">Profile</a></li>';
         echo '<li><hr class="dropdown-divider"></li>';
         echo '<li><a class="dropdown-item" href="#">Settings</a></li>';
         echo '<li><a class="dropdown-item" href="sign_out.php">Sign Out</a></li>';  // Add the sign-out link here
@@ -57,6 +57,8 @@ session_start(); // Start the session
         </div>
     </div>
 </div>
+
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

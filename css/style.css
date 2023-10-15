@@ -88,3 +88,25 @@ nav {
   transform: scale(1.15);
   background: darkblue;
 }
+
+
+
+.profile {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 10px;
+}

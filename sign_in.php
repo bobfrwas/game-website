@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verify the entered password against the stored password
     if ($storedPassword && $password == $storedPassword) {
         // Successful login
+        $_SESSION["user_email"] = $email;
         $_SESSION["username"] = $username; // Store the username in a session variable
 
         // Redirect to index.html
@@ -43,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Invalid email or password. Please try again.";
     }
 }
+
 
 // Close the database connection
 $conn->close();
