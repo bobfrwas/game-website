@@ -1,6 +1,8 @@
 <?php
 session_start(); // Start the session
 
+
+
 // Assuming you have a database connection established
 // Replace 'your_database_name', 'your_username', 'your_password', and 'your_table_name' with your actual database details
 $db = new mysqli('localhost', 'bobfrwas', '', 'game_website');
@@ -25,6 +27,9 @@ if (isset($_SESSION['user_email'])) {
 
 
         $file_path = $user['file_path'];
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,22 +38,77 @@ if (isset($_SESSION['user_email'])) {
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/my_account_style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
 </head>
 <body>
-    <div class="allign_center">
+
+
+<div class="container-fluid" style="padding-bottom: 2rem;">
+    <div class="row" style="background-color: grey;">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <ul class="navbar-nav flex-row">
     <?php
-    echo '<img src="' . $file_path . '" alt="Image Description">';?>
-    <h1><?php echo $user['username']; ?>!</h1>
-    <p>Email: <?php echo $user['email']; ?></p>
-    <p>Location: <?php echo $user['bio']; ?></p>
+    if (isset($_SESSION["username"])) {
+        echo '<li class="nav-item dropdown">';
+        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">';
+        echo $_SESSION["username"];
+        echo '</a>';
+        echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
+        echo '<li><a class="dropdown-item" href="my_account.php">Profile</a></li>';
+        echo '<li><hr class="dropdown-divider"></li>';
+        echo '<li><a class="dropdown-item" href="#">Settings</a></li>';
+        echo '<li><a class="dropdown-item" href="sign_out.php">Sign Out</a></li>';  // Add the sign-out link here
+        echo '</ul>';
+        echo '</li>';
+    } else {
+        echo '<li class="nav-item">';
+        echo '<a class="nav-link" href="create_an_account.html">Create an Account</a>';
+        echo '</li>';
+        echo '<li class="nav-item">';
+        echo '<a class="nav-link" href="sign_in.html">Sign In</a>';
+        echo '</li>';
+    }
+    ?>
+</ul>
+                </div>
+            </nav>
+        </div>
     </div>
-    <!-- Add more profile information here -->
+</div>
+
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <img src="<?php echo $file_path; ?>" alt="Image Description" style="padding-bottom: 2rem;">
+                <a href="update_pfp.php" >
+        <button>Change pfp</button> </a>
+                
+                <h1><?php echo $user['username']; ?>!</h1>
+                <p>Email: <?php echo $user['email']; ?></p>
+                <p>Bio: <?php echo $user['bio']; ?></p>
+                
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+
+
 
 </body>
 </html>

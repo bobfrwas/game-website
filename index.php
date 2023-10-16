@@ -16,6 +16,7 @@ session_start(); // Start the session
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	
 
     <link rel="stylesheet" href="animate.css-main/animate.css">
 
@@ -57,6 +58,98 @@ session_start(); // Start the session
         </div>
     </div>
 </div>
+
+<div class="carousel slide" id="carousel-410824">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-410824" class="active">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-410824">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-410824">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" alt="Carousel Bootstrap First" src="images/horror_game_img1.png" height="500px" width="4rem">
+						<div class="carousel-caption">
+							<h4>
+								First Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="images/horror_game_img2.png" width="4rem" height="500px">
+						<div class="carousel-caption">
+							<h4>
+								Second Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="images/horror_game_img3.png" width="4rem" height="500px">
+						<div class="carousel-caption">
+							<h4>
+								Third Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+				</div> <a class="carousel-control-prev" href="#carousel-410824" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-410824" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+			</div>
+
+			<h2 style="text-align: center; color: red; background-color: black;">POPULAR GAMES!</h2>
+	<div class="row black_background">
+		<a href="eternal_nightmares.html">
+		<div class="col-md-4 outline-div" style="overflow: hidden;">
+			<img alt="Bootstrap Image Preview" src="images/horror_game_img4.png" class="game_box_img">
+			<h2 class="black_on_hover">
+				Heading
+			</h2>
+			<p class="black_on_hover">
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		</a>
+		<a href="#">
+		<div class="col-md-4 outline-div" style="overflow: hidden;">
+			<img alt="Bootstrap Image Preview" src="images/horror_game_img3.png" class="game_box_img">
+			<h2 class="black_on_hover">
+				Heading
+			</h2>
+			<p class="black_on_hover">
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		</a>
+		<a href="#">
+		<div class="col-md-4 outline-div" style="overflow:hidden;">
+			<img alt="Bootstrap Image Preview" src="images/horror_game_img2.png" class="game_box_img">
+			<h2 class="black_on_hover">
+				Heading
+			</h2>
+			<p class="black_on_hover">
+				Donec id elit non mi porta gravida at egedkjkfdjkfljkldakljfklkfljklkfljlkjfkljkldjkfjlkfklfjkfjfkljklfajklfjklajklfdjkaljfkljlkfkldfkljklddfkladfkljfkldsjfldafkljlt metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		</a>
+	</div>
 
 
 
