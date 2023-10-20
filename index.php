@@ -17,7 +17,7 @@ if ($result && $result->num_rows > 0) {
         $gameDescription = $game['game_description'];
         $game_price = $game['game_price'];
         $gameRating = $game['game_rating'];
-        $game_downloads = $game['$game_downloads'];
+
 
        
 
@@ -180,24 +180,34 @@ if ($result && $result->num_rows > 0) {
 				</div> <a class="carousel-control-prev" href="#carousel-410824" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-410824" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
 			</div>
 
-			<h2 style="text-align: center; color: red; background-color: black;">POPULAR GAMES!</h2>
-		<div class="game_box">
-        <img class="game_image" src="images/horror_game_img1.png" alt="Game Image">
-        <?php echo "$gameName <br /> $gameRating Stars" ?>
-        
-        <div class="game_downloads">Downloads: 10,000+</div>
-        <div class="game_price">Price: $4.99</div>
-        <a href="game_page.html" class="game_button">View Game</a>
-    </div>
+			<h2 style="text-align: center; color: red; background-color: black;">FEATURED GAMES!</h2>
 
-	<div class="game_box">
-        <img class="game_image" src="images/horror_game_img2.png" alt="Game Image">
-        <div class="game_name">Game Name</div>
-        <div class="game_rating">Rating: 4.5</div>
-        <div class="game_downloads">Downloads: 10,000+</div>
-        <div class="game_price">Price: $4.99</div>
-        <a href="game_page.html" class="game_button">View Game</a>
-    </div>
+<?php
+   
+
+
+    foreach ($games as $game) {
+        $gameName = $game['game_name'];
+        $gameDescription = $game['game_description'];
+        $gamePrice = $game['game_price'];
+        $gameRating = $game['game_rating'];
+        
+
+        echo '<div class="game_box">';
+        echo '<img class="game_image" src="images/' . $gameName . '.png" alt="Game Image">';
+        echo '<div class="game_name">' . $gameName . '</div>';
+        echo '<div class="game_description">' . $gameDescription . '</div>';
+        echo '<div class="game_price">Price: $' . $gamePrice . '</div>';
+        echo '<div class="game_rating">Rating: ' . $gameRating . '</div>';
+
+
+        echo '<a href="game_page.html" class="game_button">View Game</a>';
+        echo '</div>';
+    }
+
+
+?>
+
 
 <p>dfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 
