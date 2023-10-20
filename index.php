@@ -1,5 +1,35 @@
 <?php
-session_start(); // Start the session
+session_start(); 
+
+$db = new mysqli('localhost', 'bobfrwas', '', 'game_website');
+
+$query = "SELECT * FROM games";
+$result = $db->query($query);
+
+// Check if the query was successful and if there are any rows returned
+if ($result && $result->num_rows > 0) {
+    // Fetch all rows and store them in an array
+    $games = $result->fetch_all(MYSQLI_ASSOC);
+
+    
+    foreach ($games as $game) {
+        $gameName = $game['game_name'];
+        $gameDescription = $game['game_description'];
+        $game_price = $game['game_price'];
+        $gameRating = $game['game_rating'];
+        $game_downloads = $game['$game_downloads'];
+
+       
+
+      
+       
+
+       
+    }
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +50,51 @@ session_start(); // Start the session
 
     <link rel="stylesheet" href="animate.css-main/animate.css">
 
+	<style> 
+.game_box {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .game_image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .game_name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .game_rating {
+            margin-top: 5px;
+        }
+
+        .game_downloads,
+        .game_price {
+            margin-top: 5px;
+            color: #666;
+        }
+
+        .game_button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .game_button:hover {
+            background-color: #0056b3;
+        }
+</style>
+
 </head>
 <body>
 
@@ -28,7 +103,7 @@ session_start(); // Start the session
         <div class="col-md-12">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <a class="navbar-brand" href="#">Logo</a>
+                    <a class="navbar-brand" href="index.html">Logo</a>
                     <ul class="navbar-nav flex-row">
     <?php
     if (isset($_SESSION["username"])) {
@@ -106,52 +181,25 @@ session_start(); // Start the session
 			</div>
 
 			<h2 style="text-align: center; color: red; background-color: black;">POPULAR GAMES!</h2>
-	<div class="row black_background">
-		<a href="eternal_nightmares.html">
-		<div class="col-md-4 outline-div" style="overflow: hidden;">
-			<img alt="Bootstrap Image Preview" src="images/horror_game_img4.png" class="game_box_img">
-			<h2 class="black_on_hover">
-				Heading
-			</h2>
-			<p class="black_on_hover">
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		</a>
-		<a href="#">
-		<div class="col-md-4 outline-div" style="overflow: hidden;">
-			<img alt="Bootstrap Image Preview" src="images/horror_game_img3.png" class="game_box_img">
-			<h2 class="black_on_hover">
-				Heading
-			</h2>
-			<p class="black_on_hover">
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		</a>
-		<a href="#">
-		<div class="col-md-4 outline-div" style="overflow:hidden;">
-			<img alt="Bootstrap Image Preview" src="images/horror_game_img2.png" class="game_box_img">
-			<h2 class="black_on_hover">
-				Heading
-			</h2>
-			<p class="black_on_hover">
-				Donec id elit non mi porta gravida at egedkjkfdjkfljkldakljfklkfljklkfljlkjfkljkldjkfjlkfklfjkfjfkljklfajklfjklajklfdjkaljfkljlkfkldfkljklddfkladfkljfkldsjfldafkljlt metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		</a>
-	</div>
+		<div class="game_box">
+        <img class="game_image" src="images/horror_game_img1.png" alt="Game Image">
+        <?php echo "$gameName <br /> $gameRating Stars" ?>
+        
+        <div class="game_downloads">Downloads: 10,000+</div>
+        <div class="game_price">Price: $4.99</div>
+        <a href="game_page.html" class="game_button">View Game</a>
+    </div>
 
+	<div class="game_box">
+        <img class="game_image" src="images/horror_game_img2.png" alt="Game Image">
+        <div class="game_name">Game Name</div>
+        <div class="game_rating">Rating: 4.5</div>
+        <div class="game_downloads">Downloads: 10,000+</div>
+        <div class="game_price">Price: $4.99</div>
+        <a href="game_page.html" class="game_button">View Game</a>
+    </div>
 
+<p>dfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

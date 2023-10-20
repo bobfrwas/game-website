@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         echo "Username or email already exists. Please choose a different one.";
     } else {
-        $insertQuery = "INSERT INTO $table (username, email, password) VALUES ('$username', '$email', '$password')";
+        $insertQuery = "INSERT INTO $table (username, email, password, file_path) VALUES ('$username', '$email', '$password', 'images/pfp/default_user_img.jpg')";
         if ($conn->query($insertQuery) === TRUE) {
             header("Location: sign_in.html?account_created_successfully");
             exit();

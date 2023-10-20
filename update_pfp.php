@@ -38,6 +38,8 @@ if (isset($_SESSION['user_email'])) {
     }
 } else {
     echo 'User email not found in session.';
+    $redirectUrl = "sign_in.php";
+    header("Location: $redirectUrl");
 }
 
 $db->close();

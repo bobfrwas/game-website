@@ -49,7 +49,7 @@ if (isset($_SESSION['user_email'])) {
         <div class="col-md-12">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="d-flex justify-content-between align-items-center w-100">
-                    <a class="navbar-brand" href="#">Logo</a>
+                    <a class="navbar-brand" href="index.php">Logo</a>
                     <ul class="navbar-nav flex-row">
     <?php
     if (isset($_SESSION["username"])) {
