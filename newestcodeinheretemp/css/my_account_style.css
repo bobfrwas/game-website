@@ -1,0 +1,13 @@
+img {
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.allign_center {
+    text-align: center;
+}
