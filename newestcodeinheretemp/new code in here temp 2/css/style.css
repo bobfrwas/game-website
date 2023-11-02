@@ -1,0 +1,117 @@
+.carousel {
+    padding-bottom: 2rem;
+}
+
+.black_on_hover {
+    color: white;
+    text-decoration: none;
+}
+
+.black_on_hover:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.outline-div {
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+li {
+  padding: 10px;
+}
+
+
+
+.game_box_img{
+ height: 500px;
+ width: 100px;
+}
+
+.img_height {
+  max-height: 1px;
+  width: auto;
+}
+
+.custom-navbar {
+    background-color: black;
+  }
+
+
+
+
+body{
+    background-color: #3b003d;
+}
+
+nav {
+    background-color: darkgrey;
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-info {
+    font-size: 14px;
+  }
+
+.button_rounded {
+  border-radius: 20px;
+}
+
+.btn_animated {
+  transition: transform 0.3s ease;
+}
+
+.btn_animated:hover {
+  transform: scale(1.15);
+  background: darkblue;
+}
+
+
+
+.profile {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 10px;
+}
