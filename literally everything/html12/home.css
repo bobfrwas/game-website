@@ -1,0 +1,16 @@
+.first {
+    float: left;
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: auto;
+  }
+  
+
+  .second {
+    float: left;
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    margin: left;
+  }

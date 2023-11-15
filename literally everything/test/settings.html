@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner Example</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		#banner {
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+
+
+</head>
+
+
+
+
+
+<body>
+  <div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="#contact">Contact</a>
+  <a href="https://www.youtube.com/watch?v=i43tkaTXtwI">About</a>
+  <a href="#addthislaters">Topics</a>
+  <a href="#thiswillbecreateanaccount">Create an account</a>
+  <a href="settings.html">Settings</a>
+</div>
+</body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+window.onload = function() {
+   var darkModeEnabled = localStorage.getItem("darkModeEnabled");
+   if (darkModeEnabled === "true") {
+      document.body.classList.add("dark-mode");
+   }
+}
+</script>
+
+</body>
+</html>

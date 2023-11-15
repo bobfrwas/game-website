@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Form</title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="output"></div>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        alian">italian</option>
+        </select>
+      </fieldset>
+
+      <button type="button">Cancel</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // prevent form submission
+        printUserInput();
+      });
+
+      function printUserInput() {
+        var userInput = document.getElementById("email").value;
+        document.getElementById("output").innerHTML = "Your input is: " + userInput;
+      }
+    </script>
+  </body>
+</html>

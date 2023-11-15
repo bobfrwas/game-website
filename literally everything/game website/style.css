@@ -1,0 +1,9 @@
+.carousel-image {
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  
+  body {
+    background: linear-gradient(to bottom, lightblue, darkblue);
+  }

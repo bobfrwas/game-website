@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Form</title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="output"></div>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <label for="topic">Favourite film:</label>
+        <select id="topic" name="topic">
+          <option value="horror">horror</option>
+          <option value="action">action</option>
+          <option value="romance">romance</option>
+        </select>
+
+        <label for="artist">Favourite artist:</label>
+        <select id="artist" name="artist">
+          <option value="Bob">Bob</option>
+          <option value="Fred">Fred</option>
+          <option value="John">John Glazebrook</option>
+        </select>
+
+        <label for="food">Favourite food:</label>
+        <select id="food" name="food">
+          <option value="mexican">mexican</option>
+          <option value="chinese">chinese</option>
+          <option value="italian">italian</option>
+        </select>
+      </fieldset>
+
+      <button type="button">Cancel</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // prevent form submission
+        printUserInput();
+      });
+
+      function printUserInput() {
+        var userInput = document.getElementById("email").value;
+        document.getElementById("output").innerHTML = "Your input is: " + userInput;
+      }
+    </script>
+  </body>
+</html>

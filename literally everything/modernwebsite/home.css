@@ -1,0 +1,295 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  @font-face {
+    font-family: mine;
+    src: url("C:/xampp/htdocs/modernwebsite/Roboto-Regular.ttf")
+  }
+
+body {
+    font-family: mine;
+}
+  
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    top: 0;
+    z-index: 1;
+    position:fixed;
+    top:0;
+  }
+  .container a.active{
+    color:dimgray;
+  }
+  .container a {
+    color: silver;
+  }
+  
+  .container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 20px;
+  }
+  
+  .first_image {
+    /* The image used */
+    background-image: url("https://cdn.motor1.com/images/mgl/v2Kwq/s1/2017-volkswagen-touran.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* add this line */
+  
+  }
+  
+  .first_image .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #00000080;
+    
+  }
+  
+  .first_image .text h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .first_image .text p {
+    font-size: 1.2em;
+  }
+  
+  .first_image .text a {
+    display: block;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-decoration: none;
+  }
+  
+  .container li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  .container a:hover {
+    color: gold;
+  }
+
+
+  .engine_image {
+    background-image: url("https://www.247spares.co.uk/res/images/engines/lots/27935993/27935993_8.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .engine_image .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #00000080;
+  }
+  
+  .engine_image .text h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .engine_image .text p {
+    font-size: 1.2em;
+  }
+  
+  .engine_image .text a {
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .comfort_gif {
+    background-image: url("https://albjerkbil-lier.volkswagen.no/globalassets/designtime/volkswagen/personbil/arkiv/2020/id.4/vw-ham_id4_bildekarusell-interior.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .comfort_gif .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #00000080;
+  }
+  
+  .comfort_gif .text h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .comfort_gif .text p {
+    font-size: 1.2em;
+  }
+  
+  .comfort_gif .text a {
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  .colour_gif {
+    background-image: url("https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2018/08/Golf-R-New-Colors-gear-patrol-lead-feature.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .colour_gif .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #00000080;
+  }
+  
+  .colour_gif .text h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .colour_gif .text p {
+    font-size: 1.2em;
+  }
+  
+  .colour_gif .text a {
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+  
+  .color-changing-text {
+    font-size: 2em; /* adjust font size as needed */
+    animation: color-change 3s infinite; /* set the animation */
+    display:block;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: red; /* start with red */
+    }
+    25% {
+      color: blue; /* change to blue at 25% */
+    }
+    50% {
+      color: green; /* change to green at 50% */
+    }
+    75% {
+      color: purple; /* change to purple at 75% */
+    }
+    100% {
+      color: red; /* change back to red at 100% */
+    }
+  }

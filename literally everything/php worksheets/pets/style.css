@@ -1,0 +1,173 @@
+.navigation-bar {
+    background-color: black;
+    padding: 1em;
+    font-size: 16px;
+}
+
+.navigation-bar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation-bar a:hover {
+    background-color: black;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20 rgba(0,0,0,0.15);
+}
+
+table th {
+background-color: #009879;
+color: #ffffff;
+text-align: left;
+}
+
+table th,
+table td {
+padding: 12px 15px;
+}
+
+table tr {
+border-bottom: 1px solid #dddddd;
+}
+
+table tr:nth_of_type(even) {
+background-color: yellow;
+}
+
+
+table tr:nth-child(odd) {
+    background-color: red;
+    }
+    
+    table tr:nth-child(even) {
+    background-color: yellow;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    * { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Set the width of the autocomplete container to match the input field */
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    width: 100%; /* Set the width of the autocomplete dropdown to match the autocomplete container */
+    /* ... */
+  }
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
