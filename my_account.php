@@ -117,7 +117,8 @@ if (isset($_SESSION['user_email'])) {
         echo 'User not found.';
     }
 } else {
-    echo 'User email not found in session.';
+    header("Location: sign_in.html");
+    exit;
 }
 
 
